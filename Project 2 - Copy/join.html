@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image.png" href="Logo.png">
+  <title>Sign Up</title>
+  <style>
+
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7e7979;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  border-radius: 25px;
+  overflow: hidden;
+  max-width: 900px;
+  width: 100%;
+  position: relative;
+  color: #fffefe;
+  border: 2px solid #cf3a15;
+  box-shadow: 0 0 25px rgb(212, 85, 26);
+}
+
+.left {
+  flex: 1;
+  padding: 50px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.left h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.left p {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+.right {
+  flex: 1;
+  padding: 50px;
+  background: rgba(0, 0, 0, 0.6);
+  position: relative;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form h2 {
+  margin-bottom: 20px;
+}
+
+input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #555;
+  margin-bottom: 20px;
+  padding: 10px;
+  color: #fff;
+  box-shadow:  0 0 8px rgb(240, 73, 27);
+}
+
+button[type="submit"] {
+  background: #da3d25;
+  border: none;
+  padding: 12px;
+  color: white;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+button[type="submit"]:hover{
+  box-shadow:  0 0 8px cyan;
+  background-color: #6d54cf;
+}
+
+.member {
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.member a {
+  color: #00c788;
+  text-decoration: none;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 30px 0 10px;
+}
+
+.divider span {
+  flex: 1;
+  height: 1px;
+  background: #444;
+}
+
+.divider p {
+  margin: 0 10px;
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  color: #333;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.footer {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  font-size: 0.8rem;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.Policies{
+  color: rgb(24, 220, 86);
+}
+
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="left">
+      <h1>Let's Get Started</h1>
+      <p>Sign up to create and account and be a partner to this project. By signing up u accept our <span class="Policies">Privay Policies...</span></p>
+    </div>
+    <div class="right">
+      <form>
+        <h2>Sign up</h2>
+        <input type="text" placeholder="Your name" />
+        <input type="email" placeholder="Your Email" />
+        <input type="password" placeholder="Create Password" />
+        <input type="password" placeholder="Repeat password" />
+     
+ <button type="submit"> Sign up.</button>
+    
+        <p class="member">Already a Member?  <a href="login.html">Sign in here</a></p>
+      </form>
+      <div class="divider">
+        <span></span>
+        <p>OR</p>
+        <span></span>
+      </div>
+      <div class="social-icons">
+        <button class="social">f</button>
+        <button class="social">t</button>
+        <button class="social">G</button>
+      </div>
+    </div>
+    <div class="footer">
+      <p>presented by JIM's TECH SOLUTIONS</p>
+    </div>
+  </div>
+
+</body>
+</html>
